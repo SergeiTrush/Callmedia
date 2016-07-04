@@ -1,0 +1,386 @@
+@import "mixin.styl"
+
+
+cl1 = #9d9d9d
+cl2 = #83837f
+cl3 = #767471
+cl4 = #d0c7bc
+cl5 = #3e3e3e
+cl6 = #0b74ac
+cl7 = #929292
+cl8 = #016fa8
+cl9 = #848484
+op = 0.7
+op1 = 0.9
+
+html
+	height 100%
+
+body
+	font 100% "Droid Sans", Arial, Tahoma, Verdana, sans-serif
+	height 100%
+
+.wrapper
+	display flex
+	flex-direction column
+	justify-content space-between	
+	min-height 100%
+	&__content
+		flex-grow 1					
+
+/***header***/
+
+.main-header
+	background linear-gradient(to top, #0069aa 0%, #0378a6 100%)	
+	border-bottom 1px solid cl2
+.header
+	flex()
+	max-width 960px
+	margin 0 auto	
+	padding 25px 0
+	&__logo
+		display block
+	&__form
+		flex()
+		align-items flex-start
+	&__name
+		position relative
+		&_inner
+			hformbtn()
+			display block
+			margin-bottom 5px
+		&_img	
+			hformimg()		
+			background url("../images/sprite.png") no-repeat 0px 0px
+	&__pass
+		position relative
+		&_inner
+			hformbtn()
+			display block
+			margin-bottom 5px
+		&_img
+			hformimg()		
+			background url("../images/sprite.png") no-repeat -19px 0px				
+	&__sub
+		hformsub()	
+		&:hover
+			opacity op	
+
+/***nav***/		
+
+.nav
+	background linear-gradient(to top, #cbc3b3 0%, #e2d9ce 100%)
+	box-shadow 0 0 13px rgba(#000, .4)
+	border-bottom 1px solid #b6afa1
+	&__button
+		font-size 1.5em
+		color #0069a7
+		margin-left 10px
+		outline none
+		border none
+		cursor pointer
+		background transparent	
+		display none
+		padding 12px 0	
+		&:hover
+			opacity op
+	&__list
+		overflow hidden
+		max-width 960px
+		margin 0 auto		
+	&__item
+		float left
+		padding 12px 26px
+		border-left 1px solid #e3ddd4
+		position relative	
+		&:hover
+			background linear-gradient(to top, #ab9e8a 0%, #ccbeae 100%)
+			cursor pointer
+		&:before
+			nborder()
+	&__link
+		color cl3	
+		font 0.87em "Droid Sans", Arial, Tahoma, Verdana, sans-serif	
+		text-decoration none
+		&:hover
+			color #fff	
+			
+/***container***/		
+
+.main-container
+	background transparent
+.container
+	max-width 960px
+	margin 0 auto
+	flex()	
+	align-items flex-start
+	flex-wrap nowrap
+	padding 37px 0
+	&__content
+		flex-basis 440px			
+	&__title
+		line-height 2.12
+		color cl5
+		font 2em "Myriad Pro"
+		&_clr
+			color cl6
+	&__text
+		color cl7	
+		font 0.81em "Droid Sans", Arial, Tahoma, Verdana, sans-serif
+		line-height 1.4	
+		margin-top 15px			
+	&__box
+		margin 7px 0 0 20px
+		position relative
+	&__img
+		width 100%	
+	&__info
+		background url("../images/info.png") no-repeat
+		background-size cover
+		width 214px
+		height 75px	
+		position absolute
+		top 57%
+		left -1.7%
+		padding-top 13px
+		padding-left 18px
+		color #9cdbfc
+		font 1.5em "Myriad Pro"
+	&__size
+		font-size 1.23em	
+		display block
+		margin-bottom -5px
+		letter-spacing 0.8px			
+			
+/***content***/	
+
+.main-content
+	background #efefe8
+	border-top 1px solid #fff
+	box-shadow 0 -6px 10px rgb(#efefe8)
+.content
+	padding-bottom 36px
+	margin 0 auto
+	max-width 960px
+	&__top		
+		flex()
+		align-items flex-start
+		justify-content center
+	&__box
+		margin 36px 30px 0 0	
+		max-width 100%	
+		&:last-child
+			margin-right 0	
+.benefits__title
+	ctitle()
+.benefits__box,
+.packs__box
+	background #fff	
+	padding 20px 22px 25px
+	min-width 260px
+.benefits__hide,
+.packs__hide	
+	display none
+.benefits__item
+	padding-left 33px
+	margin-bottom 16px
+	position relative
+	color #848484
+	font 0.87em "Droid Sans", Arial, Tahoma, Verdana, sans-serif
+	&:after
+		content ""
+		background url("../images/sprite.png") no-repeat -35px -18px
+		width 22px
+		height 22px	
+		position absolute
+		top -21%
+		left 0%			
+.benefits__btn
+	ctitlebtn()
+	&:hover
+		opacity op1
+.packs__title
+	ctitle()
+.packs__box
+	background #fff	
+	padding 16px 22px 25px
+	min-width 260px		
+.packs__item
+	margin-bottom 15px
+	position relative
+	flex()	
+	cursor pointer
+.packs__ttl
+	color #006ba9
+	font 1em "Droid Sans", Arial, Tahoma, Verdana, sans-serif
+	font-weight bold
+.packs__text
+	padding-left 41px
+	&:hover
+		opacity op	
+.packs__num
+	color cl3
+	font 0.75em "Droid Sans", Arial, Tahoma, Verdana, sans-serif 	
+	&:before
+		content ""
+		background url("../images/sprite.png") no-repeat 0px -18px
+		width 32px
+		height 22px	
+		position absolute
+		top 11%
+		left 0%
+.packs__click	
+	background url("../images/sprite.png") no-repeat -38px 0px
+	width 16px
+	height 16px	
+	outline none
+	border none
+	cursor pointer
+	&:hover .packs-content
+		display block
+.packs__btn
+	ctitlebtn()
+	margin-top 20px
+	&:hover
+		opacity op1	
+.packs-content
+	background #131313
+	box-shadow 0 0 5px rgba(#000, .35)
+	border-radius 4px
+	color #fff
+	width 160px
+	position absolute
+	top -3%
+	right -82%
+	padding 10px 10px 15px
+	text-align left
+	display none
+	&:before
+		content ""
+		display block
+		position absolute
+		top 21%
+		left -4%
+		border-top: 6px solid transparent
+		border-right: 7px solid #131313
+		border-bottom: 6px solid transparent
+	&__title
+		font 0.81em "Myriad Pro"
+		margin-bottom 5px
+		letter-spacing 0.7px 
+	&__text
+		letter-spacing 0.8px
+		font 0.62em "Droid Sans", Arial, Tahoma, Verdana, sans-serif 	
+.service__title
+	ctitle()	
+.service__box
+	background #fff	
+	padding 14px 22px 25px
+	max-width 380px	
+	color cl9
+.service__text
+	font 0.81em "Droid Sans", Arial, Tahoma, Verdana, sans-serif		
+	line-height 1.4	
+.service__reg
+	margin-top 11px
+.service__firstname,
+.service__lastname
+	margin-bottom 15px
+	flex()
+	font 0.81em "Droid Sans", Arial, Tahoma, Verdana, sans-serif	
+.service__user,
+.service__pass
+	hformbtn()
+	font-size 0.9em
+	border 1px solid #c8c8c8
+	padding-left 12px
+	margin-right 0
+	width 244px
+	margin-bottom 5px
+.service__submit
+	ctitlebtn()
+	margin-top 1px		
+	width 103px
+	&:hover
+		opacity op1						
+.content-btm
+	padding-top 40px 
+	flex()
+	&__pay
+		cicon()	
+		background-position 0px -42px
+		width 125px
+		height 35px
+	&__mc
+		cicon()	
+		background-position -60px 0px
+		width 65px
+		height 39px
+	&__visa
+		cicon()
+		background-position 0px -79px
+		width 60px
+		height 38px	
+	&__new
+		margin-left 65px	
+	&__title
+		color #006ba9
+		font 1em "Myriad Pro"
+	&__form
+		flex()	
+		align-items flex-start
+	&__email
+		margin-right 40px
+		margin-bottom 5px
+		hformbtn()
+		border 1px solid #c8c8c8
+		padding-left 12px
+		width 244px	
+		display block
+	&__sub
+		ctitlebtn()
+		width 103px	
+		&:hover
+			opacity op1	
+
+/***footer***/
+
+.main-footer
+	background linear-gradient(to top, #0069aa 0%, #0378a6 100%)	
+	border-top 1px solid cl2		
+.footer
+	margin 0 auto
+	max-width 960px
+	flex()	
+	&__list
+		flex-basis 275px
+		display flex
+		justify-content space-between		
+	&__item
+		padding 18px 0
+	&__link
+		color #fff		
+		text-decoration none
+		font 0.81em "Droid Sans", Arial, Tahoma, Verdana, sans-serif	
+		&:hover
+			opacity op	
+	&__box
+		overflow hidden
+		margin-left 48px		
+		color #fff
+		font 0.73em "Droid Sans", Arial, Tahoma, Verdana, sans-serif		
+	&__copy
+		border-right 1px solid #fff
+		margin-right 5px
+		padding-right 5px
+.error
+	color #d50032
+	font-size 0.9em
+
+@import "media.styl"
+
+
+
+	
+
+				

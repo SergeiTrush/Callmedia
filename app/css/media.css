@@ -1,0 +1,118 @@
+@media only screen and (max-width: 946px) {
+  .content__box:nth-child(2) {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container__info {
+    font-size: 1.1em;
+    width: 185px;
+    height: 60px;
+  }
+  .packs-content {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .header__form,
+  .content-btm__form {
+    display: block;
+  }
+  .header__name {
+    margin-bottom: 4px;
+  }
+  .header__pass {
+    margin-bottom: 10px;
+  }
+  .content-btm__sub {
+    display: block;
+    margin-top: 10px;
+  }
+  .container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 37px 10px;
+  }
+  .container__title {
+    text-align: center;
+  }
+  .container__content {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .container__box {
+    margin: 25px auto 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .content-btm {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-btm__visa {
+    margin-right: 0;
+  }
+  .content-btm__new {
+    margin: 25px 0 0 65px;
+  }
+  .footer {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 301px;
+  }
+  .footer__box {
+    margin: 0 0 20px 0;
+  }
+}
+@media only screen and (max-width: 566px) {
+  .content__box {
+    margin-right: 0;
+    width: 100%;
+  }
+  .service__box {
+    max-width: 100%;
+  }
+  .benefits__title,
+  .packs__title,
+  .service__title {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+  }
+}
+@media only screen and (max-width: 559px) {
+  .nav__item {
+    padding: 12px 15px;
+  }
+  .content-btm__new {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__info {
+    font-size: 0.8em;
+    width: 140px;
+    height: 50px;
+  }
+  .nav__button {
+    display: block;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__item {
+    float: none;
+  }
+}

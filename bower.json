@@ -1,0 +1,10 @@
+{
+  "name": "EaglesTroop",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "validate": "^0.10.0",
+    "animate.css": "^3.5.2",
+    "wow": "WOW#^1.1.2",
+    "jquery-validation": "jquery.validate#^1.13.0"
+  }
+}
